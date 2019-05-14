@@ -8,10 +8,7 @@ MAINTAINER Captain Dao <wxy@daocloud.com>
 RUN apt-get update && \
     apt-get install -y python3 \
                        python3-dev \
-                       python3-pip  \
-                       openssl  \
-                       libssl-dev  \
-                       libffi-dev  \
+                       python3-pip  \                      
                        
     # 用完包管理器后安排打扫卫生可以显著的减少镜像大小
     && apt-get clean \
